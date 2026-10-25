@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 0.6726133750053123,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": true,
+    "input_tokens": 111,
+    "invalid_critique": false,
+    "output_tokens": 3,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "instant_once",
+  "case_id": "logic-rates-004",
+  "checkpoints": [
+    {
+      "candidate": "10",
+      "candidate_hash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+      "critique": null,
+      "generation": {
+        "content": "10",
+        "latency_seconds": 0.6726133750053123,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "09f3734224d669b81f5ce4a5295ffd2cc47605506ed4b75fdf31aef16aa3d60c",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 111,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.622,
+          "tokens_per_second": 89.35840575310863,
+          "total_output_tokens": 3
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "10",
+        "expected": "10",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:41:33.867548+00:00",
+  "reasoning": "off",
+  "recursive": false,
+  "started_at": "2026-07-24T15:41:33.194558+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 0.6729869169648737
+}

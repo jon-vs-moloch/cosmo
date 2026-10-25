@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 2.3602167909266427,
+    "inference_seconds_after_best_checkpoint": 1.7140984579455107,
+    "initial_passed": true,
+    "input_tokens": 362,
+    "invalid_critique": false,
+    "output_tokens": 39,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 37,
+    "two_cycle": false
+  },
+  "arm_id": "instant_recursive",
+  "case_id": "logic-count-003",
+  "checkpoints": [
+    {
+      "candidate": "4",
+      "candidate_hash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the answer using the Pigeonhole Principle (n+1 where n is the number of colors).\"}",
+        "summary": "The candidate correctly identifies the answer using the Pigeonhole Principle (n+1 where n is the number of colors).",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "4",
+        "latency_seconds": 0.646118332981132,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "05445afd5b24e1325ee8e080cb3a43a2f1e52f1f5476522b2e4be0ee3a905488",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 112,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.615,
+          "tokens_per_second": 133.83335258303055,
+          "total_output_tokens": 2
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "4",
+        "expected": "4",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the answer using the Pigeonhole Principle (n+1 where n is the number of colors).\"}",
+      "latency_seconds": 1.7140984579455107,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": null,
+      "request_hash": "5046c9e42f984517cadcf88c6a0c820b0337dd61ea6060ca25f48efe7399d5fb",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 250,
+        "reasoning_output_tokens": 0,
+        "time_to_first_token_seconds": 1.005,
+        "tokens_per_second": 53.34835099987527,
+        "total_output_tokens": 37
+      }
+    }
+  ],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:38:53.911755+00:00",
+  "reasoning": "off",
+  "recursive": true,
+  "started_at": "2026-07-24T15:38:51.550907+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 2.360852707992308
+}

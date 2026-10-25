@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 38.622354207909666,
+    "inference_seconds_after_best_checkpoint": 13.591088374960236,
+    "initial_passed": true,
+    "input_tokens": 414,
+    "invalid_critique": false,
+    "output_tokens": 1875,
+    "reasoning_tokens": 1811,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 659,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_recursive",
+  "case_id": "trace-aliasing-002",
+  "checkpoints": [
+    {
+      "candidate": "[1, 2, 3, 4] [9, 2, 3]",
+      "candidate_hash": "cce0a447e15d5d28ad5b3bef250609c40453409a3a7c3d979299b0f962162fac",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly traces the list mutations and the reassignment of 'a', resulting in the correct printed output.\"}",
+        "summary": "The candidate correctly traces the list mutations and the reassignment of 'a', resulting in the correct printed output.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "[1, 2, 3, 4] [9, 2, 3]",
+        "latency_seconds": 25.03126583294943,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "8f4c730908e01c3a99b7c70a6f31cbd06f36c19ad6f84cfd3a94e65ea72e72ef",
+        "request_hash": "2495b84a0ad2a25e292543fc19a7e845175f2c800eb01388909e5fafa7d54147",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 128,
+          "reasoning_output_tokens": 1191,
+          "time_to_first_token_seconds": 0.632,
+          "tokens_per_second": 49.87076612293212,
+          "total_output_tokens": 1216
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "[1, 2, 3, 4] [9, 2, 3]",
+        "expected": "[1, 2, 3, 4] [9, 2, 3]",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly traces the list mutations and the reassignment of 'a', resulting in the correct printed output.\"}",
+      "latency_seconds": 13.591088374960236,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": "55d8e9793a156bdc008d495947314d76838d8e4667639c1b75dfda9797dc5ab6",
+      "request_hash": "9f3aa1d1e304ae780fd2d3735389e572b26ffddd99a47d14ea1281d1672c35ac",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 286,
+        "reasoning_output_tokens": 620,
+        "time_to_first_token_seconds": 0.274,
+        "tokens_per_second": 49.54534673101409,
+        "total_output_tokens": 659
+      }
+    }
+  ],
+  "error": null,
+  "family": "program_trace",
+  "finished_at": "2026-07-24T15:41:33.194093+00:00",
+  "reasoning": "on",
+  "recursive": true,
+  "started_at": "2026-07-24T15:40:54.571218+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 38.623052624985576
+}

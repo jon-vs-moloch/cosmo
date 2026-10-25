@@ -1,0 +1,11 @@
+{
+  "destination": "evidence/runs/20260724T153723Z",
+  "run_id": "20260724T153723Z",
+  "sealed_at": "2026-07-24T15:45:31.030674+00:00",
+  "sha256": "c4e993a389a48f59df1041aa7463d8a078523fe6be3690842f619b76d974dd7d",
+  "source": "runs/20260724T153723Z",
+  "publication_redaction": {
+    "note": "Absolute local paths in manifest.json and summary.json were rewritten to repo-relative (or ~/.lmstudio-relative) form for publication. `sha256` is the original seal over the pre-redaction bytes; `published_sha256` is run_content_hash over the files as published.",
+    "published_sha256": "85b5e3315b7f6c306145f8becba23949dddbfa6f50e616b620cc865279953361"
+  }
+}

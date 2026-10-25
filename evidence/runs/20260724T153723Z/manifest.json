@@ -1,0 +1,128 @@
+{
+  "arms": [
+    "instant_once",
+    "thinking_once",
+    "instant_recursive",
+    "thinking_recursive"
+  ],
+  "base_url": "http://127.0.0.1:1234",
+  "benchmark": "benchmarks/iterative-self-verification/v1/cases.jsonl",
+  "benchmark_sha256": "f70f00b45b9734fd3ace3336f6bbdc0a86defcf4173bf426292ef585b9ed1dd1",
+  "capability_probe": {
+    "off": {
+      "content": "323",
+      "content_sha256": "3949ac1596ec77106a709a618bf5adcb19b77537ce8bcbdf54ff830169cdd084",
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": null,
+      "stats": {
+        "input_tokens": 39,
+        "reasoning_output_tokens": 0,
+        "time_to_first_token_seconds": 0.652,
+        "tokens_per_second": 77.6028480245225,
+        "total_output_tokens": 4
+      }
+    },
+    "on": {
+      "content": "323",
+      "content_sha256": "3949ac1596ec77106a709a618bf5adcb19b77537ce8bcbdf54ff830169cdd084",
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": "3a5b542e256baade7cbfcbcb63b29f7eaefb301f2b0784196f5ac4526dd3b874",
+      "stats": {
+        "input_tokens": 37,
+        "reasoning_output_tokens": 312,
+        "time_to_first_token_seconds": 0.288,
+        "tokens_per_second": 52.983913738978174,
+        "total_output_tokens": 319
+      }
+    }
+  },
+  "capability_probe_validated": true,
+  "case_ids": [
+    "trace-accumulator-001",
+    "trace-aliasing-002",
+    "trace-state-003",
+    "trace-recursion-004",
+    "logic-order-001",
+    "logic-boxes-002",
+    "logic-count-003",
+    "logic-rates-004",
+    "constraint-json-001",
+    "constraint-transform-002",
+    "constraint-filter-003",
+    "constraint-record-004"
+  ],
+  "chat_template_path": "~/.lmstudio/models/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit/chat_template.jinja",
+  "chat_template_sha256": "f41108adadfd4a8aa67c49731c4e121fecb7f19cd63fc567e65eb4f09d8b1cbd",
+  "config_fingerprint": "e4359a7af902dd81997f3847621f1a0456f42d509172389b8de125e48936cdab",
+  "cosmo_version": "0.1.0",
+  "created_at": "2026-07-24T15:37:23.582258+00:00",
+  "evaluator_sha256": "4e3f7c224b84262c4b0bf748a10bf5bce928bf54c037c6815044e1577ce47fff",
+  "hidden_evaluation_is_terminal": true,
+  "lmstudio": {
+    "build_version": "0.4.19+2",
+    "bundle_path": "/Applications",
+    "short_version": "0.4.19+2"
+  },
+  "lmstudio_sensitive_logging_policy": "external_to_cosmo; inspect runtime config",
+  "max_cycles": 4,
+  "max_output_tokens": 2048,
+  "model": "google/gemma-4-26b-a4b-qat",
+  "model_artifact_dir": "~/.lmstudio/models/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit",
+  "model_artifact_sha256": "cb567cbcd9f874d2daf1cc3faa8978ece122799892d47a5fd053a2d447e513ad",
+  "model_instance_id": "cosmo-gemma4-26b",
+  "model_record": {
+    "architecture": "gemma4",
+    "capabilities": {
+      "reasoning": {
+        "allowed_options": [
+          "off",
+          "on"
+        ],
+        "default": "on"
+      },
+      "trained_for_tool_use": false,
+      "vision": true
+    },
+    "description": null,
+    "display_name": "Gemma 4 26B A4B QAT",
+    "format": "mlx",
+    "key": "google/gemma-4-26b-a4b-qat",
+    "loaded_instances": [
+      {
+        "config": {
+          "context_length": 8192,
+          "parallel": 1
+        },
+        "id": "cosmo-gemma4-26b"
+      }
+    ],
+    "max_context_length": 262144,
+    "params_string": "26B",
+    "publisher": "google",
+    "quantization": {
+      "bits_per_weight": 4,
+      "name": "4bit"
+    },
+    "selected_variant": "google/gemma-4-26b-a4b-qat@4bit",
+    "size_bytes": 15641388559,
+    "type": "llm",
+    "variants": [
+      "google/gemma-4-26b-a4b-qat@4bit"
+    ]
+  },
+  "model_record_sha256": "74087122f379f09104d338df24ad5876eb767c720fdc02df84a2ef36c889c00a",
+  "order_seed": 20260724,
+  "prompt_hashes": {
+    "amend": "d53c6385546a263835e552cd7e32de4c85780131dc5e148ce34399a0a142b657",
+    "critic": "05d06d43417b6cf30a409c17904d326739524fe5365ae272d8322493030e824a",
+    "draft": "c7b1ab97356582847d18fd551459b3884ab085bf0ebdf31abf64c3593991663e"
+  },
+  "run_id": "20260724T153723Z",
+  "schema_version": "cosmo.run.v1",
+  "source": {
+    "commit": "219fa939c0e626da86ee631bb898ed29dcf6eecb",
+    "dirty": false
+  },
+  "store": false,
+  "temperature": 0.0
+}

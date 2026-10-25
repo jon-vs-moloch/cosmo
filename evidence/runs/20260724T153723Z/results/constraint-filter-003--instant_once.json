@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 0.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 2.508781375014223,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": false,
+    "input_tokens": 112,
+    "invalid_critique": false,
+    "output_tokens": 101,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": false,
+    "terminal_score": 0.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "instant_once",
+  "case_id": "constraint-filter-003",
+  "checkpoints": [
+    {
+      "candidate": "From the integers 1 through 15 inclusive, the numbers divisible by 3 are 3, 6, 9, 12, 15.\nFrom these, the numbers not divisible by 2 are 3, 9, 15.\nSquaring these numbers:\n3^2 = 9\n9^2 = 81\n15^2 = 225\n\nFINAL: 9,81,225",
+      "candidate_hash": "b9c4f54b33ceb871f62f84968b07fab4b2a72cdc3496fc21f67177b85543a763",
+      "critique": null,
+      "generation": {
+        "content": "From the integers 1 through 15 inclusive, the numbers divisible by 3 are 3, 6, 9, 12, 15.\nFrom these, the numbers not divisible by 2 are 3, 9, 15.\nSquaring these numbers:\n3^2 = 9\n9^2 = 81\n15^2 = 225\n\nFINAL: 9,81,225",
+        "latency_seconds": 2.508781375014223,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "f972d569e9678d322129851cacd55d93aca03370170d690f3898e3078ffa6015",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 112,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.612,
+          "tokens_per_second": 53.67740135187375,
+          "total_output_tokens": 101
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "",
+        "expected": "9,81,225",
+        "passed": false,
+        "score": 0.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "constraint_following",
+  "finished_at": "2026-07-24T15:40:09.915369+00:00",
+  "reasoning": "off",
+  "recursive": false,
+  "started_at": "2026-07-24T15:40:07.406248+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 2.5091271250275895
+}

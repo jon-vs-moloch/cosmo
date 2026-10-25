@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 0.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 2.979086375096813,
+    "inference_seconds_after_best_checkpoint": 2.3095351670635864,
+    "initial_passed": false,
+    "input_tokens": 366,
+    "invalid_critique": false,
+    "output_tokens": 73,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": true,
+    "terminal_passed": false,
+    "terminal_score": 0.0,
+    "tokens_after_best_checkpoint": 69,
+    "two_cycle": false
+  },
+  "arm_id": "instant_recursive",
+  "case_id": "logic-order-001",
+  "checkpoints": [
+    {
+      "candidate": "LJKM",
+      "candidate_hash": "6320c2b25a3702d2f7dfa8f376aac83c3a059506721e0e41a3869e45f417d913",
+      "critique": {
+        "defects": [],
+        "raw": "```json\n{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the unique order LJKM based on the constraints: L is left of J, K is immediately right of J, and M is not at either end (it must be in the 3rd position to satisfy the constraints).\"}\n```",
+        "summary": "The candidate correctly identifies the unique order LJKM based on the constraints: L is left of J, K is immediately right of J, and M is not at either end (it must be in the 3rd position to satisfy the constraints).",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "LJKM",
+        "latency_seconds": 0.6695512080332264,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "462037b5828f88b61de857b32c50438f37344e16e4710a26f1d5110b1a8941e3",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 113,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.602,
+          "tokens_per_second": 76.58739290713049,
+          "total_output_tokens": 4
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "LJKM",
+        "expected": "LMJK",
+        "passed": false,
+        "score": 0.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "```json\n{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the unique order LJKM based on the constraints: L is left of J, K is immediately right of J, and M is not at either end (it must be in the 3rd position to satisfy the constraints).\"}\n```",
+      "latency_seconds": 2.3095351670635864,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": null,
+      "request_hash": "ca4177a6b3f19b2469cefbb4eef835f396ce03c4d1668e1700a23071db80a069",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 253,
+        "reasoning_output_tokens": 0,
+        "time_to_first_token_seconds": 0.995,
+        "tokens_per_second": 53.17100676023963,
+        "total_output_tokens": 69
+      }
+    }
+  ],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:38:56.892024+00:00",
+  "reasoning": "off",
+  "recursive": true,
+  "started_at": "2026-07-24T15:38:53.912221+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 2.979810707969591
+}

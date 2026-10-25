@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 0.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 0.7629932500422001,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": false,
+    "input_tokens": 155,
+    "invalid_critique": false,
+    "output_tokens": 2,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": false,
+    "terminal_score": 0.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "instant_once",
+  "case_id": "logic-boxes-002",
+  "checkpoints": [
+    {
+      "candidate": "RED",
+      "candidate_hash": "65cbe1e19791d49b023800b3e22714e2589b6339bef5e660b628dd1023506ebd",
+      "critique": null,
+      "generation": {
+        "content": "RED",
+        "latency_seconds": 0.7629932500422001,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "694c244a0fb62ebd2b331b5d195c0a491d054b987ce5bf2f080a1e4d49f9211a",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 155,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.732,
+          "tokens_per_second": 132.59521994232108,
+          "total_output_tokens": 2
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "RED",
+        "expected": "MIXED",
+        "passed": false,
+        "score": 0.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:41:51.097954+00:00",
+  "reasoning": "off",
+  "recursive": false,
+  "started_at": "2026-07-24T15:41:50.334641+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 0.7633107909932733
+}

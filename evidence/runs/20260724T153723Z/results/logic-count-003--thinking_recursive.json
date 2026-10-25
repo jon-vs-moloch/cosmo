@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 13.475992667023093,
+    "inference_seconds_after_best_checkpoint": 7.3645753329619765,
+    "initial_passed": true,
+    "input_tokens": 358,
+    "invalid_critique": false,
+    "output_tokens": 615,
+    "reasoning_tokens": 562,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 327,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_recursive",
+  "case_id": "logic-count-003",
+  "checkpoints": [
+    {
+      "candidate": "4",
+      "candidate_hash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the minimum number of socks required using the Pigeonhole Principle (3 colors + 1 = 4) and follows the output contract.\"}",
+        "summary": "The candidate correctly identifies the minimum number of socks required using the Pigeonhole Principle (3 colors + 1 = 4) and follows the output contract.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "4",
+        "latency_seconds": 6.111417334061116,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "b77e299adbc2035d06566f7b1e3582aa8676ae3f61ce3c33821d536f4352ee44",
+        "request_hash": "020151c1774f28abd242db4a2098f5e66ab28414e443d8064bc7495c30945cd2",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 110,
+          "reasoning_output_tokens": 283,
+          "time_to_first_token_seconds": 0.621,
+          "tokens_per_second": 52.605822014037535,
+          "total_output_tokens": 288
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "4",
+        "expected": "4",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the minimum number of socks required using the Pigeonhole Principle (3 colors + 1 = 4) and follows the output contract.\"}",
+      "latency_seconds": 7.3645753329619765,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": "d37537842ce0334dd4703e794c882cc4c1f98f26e875211bdda0f691b145318e",
+      "request_hash": "9e919c42de1a7951614f93711c1670f6dc98de3f345b65967348b76088242c39",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 248,
+        "reasoning_output_tokens": 279,
+        "time_to_first_token_seconds": 0.998,
+        "tokens_per_second": 51.487924251343735,
+        "total_output_tokens": 327
+      }
+    }
+  ],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:44:41.158878+00:00",
+  "reasoning": "on",
+  "recursive": true,
+  "started_at": "2026-07-24T15:44:27.682251+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 13.476684916997328
+}

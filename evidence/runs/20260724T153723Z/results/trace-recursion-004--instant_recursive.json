@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 2.205229749903083,
+    "inference_seconds_after_best_checkpoint": 1.6121407499304041,
+    "initial_passed": true,
+    "input_tokens": 337,
+    "invalid_critique": false,
+    "output_tokens": 36,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 33,
+    "two_cycle": false
+  },
+  "arm_id": "instant_recursive",
+  "case_id": "trace-recursion-004",
+  "checkpoints": [
+    {
+      "candidate": "32",
+      "candidate_hash": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b",
+      "critique": {
+        "defects": [],
+        "raw": "```json\n{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly computes f(5) based on the recurrence relation.\"}\n```",
+        "summary": "The candidate correctly computes f(5) based on the recurrence relation.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "32",
+        "latency_seconds": 0.5930889999726787,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "64af2af35ba993b5fef80e4a195a7b53d77ea5bbca094da0a925c34d196a83a1",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 99,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.545,
+          "tokens_per_second": 89.61008412146647,
+          "total_output_tokens": 3
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "32",
+        "expected": "32",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "```json\n{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly computes f(5) based on the recurrence relation.\"}\n```",
+      "latency_seconds": 1.6121407499304041,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": null,
+      "request_hash": "b5882cae66d900f0e07aebf18cd9f6b9553e37d0993fc20c611361388afd73ac",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 238,
+        "reasoning_output_tokens": 0,
+        "time_to_first_token_seconds": 0.984,
+        "tokens_per_second": 53.90974653715154,
+        "total_output_tokens": 33
+      }
+    }
+  ],
+  "error": null,
+  "family": "program_trace",
+  "finished_at": "2026-07-24T15:43:46.563512+00:00",
+  "reasoning": "off",
+  "recursive": true,
+  "started_at": "2026-07-24T15:43:44.357677+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 2.205837917048484
+}

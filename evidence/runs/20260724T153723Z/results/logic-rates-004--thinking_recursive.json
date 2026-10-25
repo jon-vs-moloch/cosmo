@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 10.076150792068802,
+    "inference_seconds_after_best_checkpoint": 5.5348064170684665,
+    "initial_passed": true,
+    "input_tokens": 357,
+    "invalid_critique": false,
+    "output_tokens": 453,
+    "reasoning_tokens": 393,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 235,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_recursive",
+  "case_id": "logic-rates-004",
+  "checkpoints": [
+    {
+      "candidate": "10",
+      "candidate_hash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly calculates the total number of parts produced by both machines in 24 minutes (4 from Machine A and 6 from Machine B) and follows the output format constraints.\"}",
+        "summary": "The candidate correctly calculates the total number of parts produced by both machines in 24 minutes (4 from Machine A and 6 from Machine B) and follows the output format constraints.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "10",
+        "latency_seconds": 4.541344375000335,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "13aac054136aab03ed6297b685c03c9815bcceb0691bb0d8ce3f5951950c5cdc",
+        "request_hash": "ee1155935706cfc0d685c15523da81210243c9d541cdf2d5a9e932c1efe9749d",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 109,
+          "reasoning_output_tokens": 212,
+          "time_to_first_token_seconds": 0.408,
+          "tokens_per_second": 52.95880874156327,
+          "total_output_tokens": 218
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "10",
+        "expected": "10",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly calculates the total number of parts produced by both machines in 24 minutes (4 from Machine A and 6 from Machine B) and follows the output format constraints.\"}",
+      "latency_seconds": 5.5348064170684665,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": "12824afdebbdb36e82140f75ff2e5fcb073c83ee532b25fee3823c4b599c3433",
+      "request_hash": "ec32c2f41a2f2360ad14d0528fca67dd0123e8fc47b87d5b9f7d72c28499bcb1",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 248,
+        "reasoning_output_tokens": 181,
+        "time_to_first_token_seconds": 0.99,
+        "tokens_per_second": 51.89667676763856,
+        "total_output_tokens": 235
+      }
+    }
+  ],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:38:37.405171+00:00",
+  "reasoning": "on",
+  "recursive": true,
+  "started_at": "2026-07-24T15:38:27.328267+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 10.076937458012253
+}

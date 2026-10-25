@@ -1,0 +1,144 @@
+{
+  "arms": {
+    "instant_once": {
+      "calls": 12,
+      "corrected_runs": 0,
+      "errors": 0,
+      "false_self_passes": 0,
+      "inference_seconds": 11.445255,
+      "invalid_critiques": 0,
+      "output_tokens": 226,
+      "reasoning_tokens": 0,
+      "regressed_runs": 0,
+      "runs": 12,
+      "self_passes": 0,
+      "terminal_success_rate": 0.5,
+      "terminal_successes": 6,
+      "thrash_runs": 0
+    },
+    "instant_recursive": {
+      "calls": 33,
+      "corrected_runs": 2,
+      "errors": 0,
+      "false_self_passes": 4,
+      "inference_seconds": 75.526214,
+      "invalid_critiques": 0,
+      "output_tokens": 2760,
+      "reasoning_tokens": 0,
+      "regressed_runs": 0,
+      "runs": 12,
+      "self_passes": 11,
+      "terminal_success_rate": 0.6666666666666666,
+      "terminal_successes": 8,
+      "thrash_runs": 1
+    },
+    "thinking_once": {
+      "calls": 12,
+      "corrected_runs": 0,
+      "errors": 0,
+      "false_self_passes": 0,
+      "inference_seconds": 137.402601,
+      "invalid_critiques": 0,
+      "output_tokens": 6625,
+      "reasoning_tokens": 6451,
+      "regressed_runs": 0,
+      "runs": 12,
+      "self_passes": 0,
+      "terminal_success_rate": 1.0,
+      "terminal_successes": 12,
+      "thrash_runs": 0
+    },
+    "thinking_recursive": {
+      "calls": 24,
+      "corrected_runs": 0,
+      "errors": 0,
+      "false_self_passes": 0,
+      "inference_seconds": 245.516408,
+      "invalid_critiques": 3,
+      "output_tokens": 11712,
+      "reasoning_tokens": 11176,
+      "regressed_runs": 0,
+      "runs": 12,
+      "self_passes": 9,
+      "terminal_success_rate": 1.0,
+      "terminal_successes": 12,
+      "thrash_runs": 0
+    }
+  },
+  "paired_terminal_outcomes": {
+    "constraint-filter-003": {
+      "instant_once": false,
+      "instant_recursive": false,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "constraint-json-001": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "constraint-record-004": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "constraint-transform-002": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "logic-boxes-002": {
+      "instant_once": false,
+      "instant_recursive": false,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "logic-count-003": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "logic-order-001": {
+      "instant_once": false,
+      "instant_recursive": false,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "logic-rates-004": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "trace-accumulator-001": {
+      "instant_once": false,
+      "instant_recursive": false,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "trace-aliasing-002": {
+      "instant_once": false,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "trace-recursion-004": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "trace-state-003": {
+      "instant_once": false,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    }
+  },
+  "run_dir": "runs/20260724T153723Z",
+  "run_id": "20260724T153723Z"
+}

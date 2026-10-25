@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 0.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 3.946378874941729,
+    "inference_seconds_after_best_checkpoint": 1.5744422079296783,
+    "initial_passed": false,
+    "input_tokens": 461,
+    "invalid_critique": false,
+    "output_tokens": 153,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": true,
+    "terminal_passed": false,
+    "terminal_score": 0.0,
+    "tokens_after_best_checkpoint": 52,
+    "two_cycle": false
+  },
+  "arm_id": "instant_recursive",
+  "case_id": "constraint-filter-003",
+  "checkpoints": [
+    {
+      "candidate": "From the integers 1 through 15 inclusive, the numbers divisible by 3 are 3, 6, 9, 12, 15.\nFrom these, the numbers not divisible by 2 are 3, 9, 15.\nSquaring these numbers:\n3^2 = 9\n9^2 = 81\n15^2 = 225\n\nFINAL: 9,81,225",
+      "candidate_hash": "b9c4f54b33ceb871f62f84968b07fab4b2a72cdc3496fc21f67177b85543a763",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the numbers (3, 9, 15), squares them (9, 81, 225), and formats the output exactly as required.\"}",
+        "summary": "The candidate correctly identifies the numbers (3, 9, 15), squares them (9, 81, 225), and formats the output exactly as required.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "From the integers 1 through 15 inclusive, the numbers divisible by 3 are 3, 6, 9, 12, 15.\nFrom these, the numbers not divisible by 2 are 3, 9, 15.\nSquaring these numbers:\n3^2 = 9\n9^2 = 81\n15^2 = 225\n\nFINAL: 9,81,225",
+        "latency_seconds": 2.3719366670120507,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "f972d569e9678d322129851cacd55d93aca03370170d690f3898e3078ffa6015",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 112,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.479,
+          "tokens_per_second": 53.808820978796874,
+          "total_output_tokens": 101
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "",
+        "expected": "9,81,225",
+        "passed": false,
+        "score": 0.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the numbers (3, 9, 15), squares them (9, 81, 225), and formats the output exactly as required.\"}",
+      "latency_seconds": 1.5744422079296783,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": null,
+      "request_hash": "ff27f9099889276d368be6d23212464a32eb5657c4813cad17632e5d2cb39eb0",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 349,
+        "reasoning_output_tokens": 0,
+        "time_to_first_token_seconds": 0.576,
+        "tokens_per_second": 52.900420275323945,
+        "total_output_tokens": 52
+      }
+    }
+  ],
+  "error": null,
+  "family": "constraint_following",
+  "finished_at": "2026-07-24T15:44:45.755263+00:00",
+  "reasoning": "off",
+  "recursive": true,
+  "started_at": "2026-07-24T15:44:41.808235+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 3.947041542036459
+}

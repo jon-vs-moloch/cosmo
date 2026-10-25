@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 6.894316250109114,
+    "inference_seconds_after_best_checkpoint": 6.410499667050317,
+    "initial_passed": true,
+    "input_tokens": 361,
+    "invalid_critique": false,
+    "output_tokens": 281,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 278,
+    "two_cycle": false
+  },
+  "arm_id": "instant_recursive",
+  "case_id": "logic-rates-004",
+  "checkpoints": [
+    {
+      "candidate": "10",
+      "candidate_hash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+      "critique": {
+        "defects": [],
+        "raw": "```json\n{\"verdict\":\"REVISE\",\"defects\":[{\"id\":\"calculation-error\",\"description\":\"The candidate's answer (10) is incorrect. Machine A makes 24/6 = 4 parts. Machine B makes 24/4 = 6 parts. Total parts = 4 + 6 = 10. Wait, 4 + 6 is indeed 10. Let me re-calculate. 24/6 = 4. 24/4 = 6. 4 + 6 = 10. The candidate is correct.\",\"proposed_change\":\"PASS\"}] , \"summary\":\"The candidate's answer is correct. I initially miscalculated during the thought process, but 4 + 6 = 10.\"}\n```\n\nWait, I must re-evaluate my thought process. \nMachine A: 24 / 6 = 4 parts.\nMachine B: 24 / 4 = 6 parts.\nTotal: 4 + 6 = 10 parts.\nThe candidate provided \"10\".\nThe candidate is correct.\n\n```json\n{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly calculated the total number of parts produced by both machines in 24 minutes.\"}\n```",
+        "summary": "The candidate correctly calculated the total number of parts produced by both machines in 24 minutes.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "10",
+        "latency_seconds": 0.4838165830587968,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "09f3734224d669b81f5ce4a5295ffd2cc47605506ed4b75fdf31aef16aa3d60c",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 111,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.436,
+          "tokens_per_second": 89.26390838809375,
+          "total_output_tokens": 3
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "10",
+        "expected": "10",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "```json\n{\"verdict\":\"REVISE\",\"defects\":[{\"id\":\"calculation-error\",\"description\":\"The candidate's answer (10) is incorrect. Machine A makes 24/6 = 4 parts. Machine B makes 24/4 = 6 parts. Total parts = 4 + 6 = 10. Wait, 4 + 6 is indeed 10. Let me re-calculate. 24/6 = 4. 24/4 = 6. 4 + 6 = 10. The candidate is correct.\",\"proposed_change\":\"PASS\"}] , \"summary\":\"The candidate's answer is correct. I initially miscalculated during the thought process, but 4 + 6 = 10.\"}\n```\n\nWait, I must re-evaluate my thought process. \nMachine A: 24 / 6 = 4 parts.\nMachine B: 24 / 4 = 6 parts.\nTotal: 4 + 6 = 10 parts.\nThe candidate provided \"10\".\nThe candidate is correct.\n\n```json\n{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly calculated the total number of parts produced by both machines in 24 minutes.\"}\n```",
+      "latency_seconds": 6.410499667050317,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": null,
+      "request_hash": "ebc752fc470cdbfbdc49b1865b5452ef901d279567a49a26f61de125d371cb44",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 250,
+        "reasoning_output_tokens": 0,
+        "time_to_first_token_seconds": 1.003,
+        "tokens_per_second": 51.561841958510804,
+        "total_output_tokens": 278
+      }
+    }
+  ],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:40:16.811571+00:00",
+  "reasoning": "off",
+  "recursive": true,
+  "started_at": "2026-07-24T15:40:09.915822+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 6.895775916986167
+}

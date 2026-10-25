@@ -1,0 +1,96 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 7.0232041670242324,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": true,
+    "input_tokens": 130,
+    "invalid_critique": false,
+    "output_tokens": 334,
+    "reasoning_tokens": 297,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_once",
+  "case_id": "constraint-json-001",
+  "checkpoints": [
+    {
+      "candidate": "{\n  \"name\": \"cosmo\",\n  \"even\": [2, 4, 6],\n  \"letters\": 5\n}",
+      "candidate_hash": "203c847a4e76057639ba358b35f7470f4a521cbe5eeeed5ccdbce62d3fc1b45a",
+      "critique": null,
+      "generation": {
+        "content": "{\n  \"name\": \"cosmo\",\n  \"even\": [2, 4, 6],\n  \"letters\": 5\n}",
+        "latency_seconds": 7.0232041670242324,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "e4c940c325ee9b19278b4332c89386e0979e17665fcf264cdc59d745b80a90e4",
+        "request_hash": "0fe768d01366a8bccebdf35ec98f2130871a6867e8d9755e913e347d44b51fe4",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 130,
+          "reasoning_output_tokens": 297,
+          "time_to_first_token_seconds": 0.63,
+          "tokens_per_second": 52.37782622376124,
+          "total_output_tokens": 334
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": {
+          "even": [
+            2,
+            4,
+            6
+          ],
+          "letters": 5,
+          "name": "cosmo"
+        },
+        "actual_keys": [
+          "name",
+          "even",
+          "letters"
+        ],
+        "duplicate_keys": [],
+        "expected": {
+          "even": [
+            2,
+            4,
+            6
+          ],
+          "letters": 5,
+          "name": "cosmo"
+        },
+        "expected_keys": [
+          "name",
+          "even",
+          "letters"
+        ],
+        "parse_error": null,
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "constraint_following",
+  "finished_at": "2026-07-24T15:39:03.915879+00:00",
+  "reasoning": "on",
+  "recursive": false,
+  "started_at": "2026-07-24T15:38:56.892422+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 7.023484208039008
+}

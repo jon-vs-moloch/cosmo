@@ -1,0 +1,46 @@
+{
+  "schema_version": "cosmo.replay-fixture.v1",
+  "description": "Hand-written offline fixture for the benchmark case trace-accumulator-001 (expected answer 5). The instant draft is wrong (7) and one witnessless revision repairs it; the thinking draft is already right. Responses are illustrative, not recorded model output.",
+  "model_record": {
+    "type": "llm",
+    "key": "replay-model",
+    "display_name": "Replay fixture model",
+    "max_context_length": 8192,
+    "capabilities": {"reasoning": {"allowed_options": ["off", "on"], "default": "off"}},
+    "loaded_instances": [{"id": "replay-model", "config": {"context_length": 8192}}]
+  },
+  "responses": [
+    {
+      "match": {"role": "capability_probe", "reasoning": "off"},
+      "content": "323",
+      "stats": {"input_tokens": 30, "total_output_tokens": 1, "reasoning_output_tokens": 0}
+    },
+    {
+      "match": {"role": "capability_probe", "reasoning": "on"},
+      "content": "323",
+      "reasoning": "17 * 19 = 17 * 20 - 17 = 340 - 17 = 323",
+      "stats": {"input_tokens": 30, "total_output_tokens": 20, "reasoning_output_tokens": 19}
+    },
+    {
+      "match": {"role": "revision", "prompt_contains": ["x = (x * 2) - i", "CURRENT DRAFT\n7\n"]},
+      "content": "5",
+      "stats": {"input_tokens": 220, "total_output_tokens": 1, "reasoning_output_tokens": 0}
+    },
+    {
+      "match": {"role": "revision", "prompt_contains": ["x = (x * 2) - i", "CURRENT DRAFT\n5\n"]},
+      "content": "5",
+      "stats": {"input_tokens": 220, "total_output_tokens": 1, "reasoning_output_tokens": 0}
+    },
+    {
+      "match": {"role": "draft", "reasoning": "off", "prompt_contains": "x = (x * 2) - i"},
+      "content": "7",
+      "stats": {"input_tokens": 60, "total_output_tokens": 1, "reasoning_output_tokens": 0}
+    },
+    {
+      "match": {"role": "draft", "reasoning": "on", "prompt_contains": "x = (x * 2) - i"},
+      "content": "5",
+      "reasoning": "x: 3 -> 4 -> 3 -> 5",
+      "stats": {"input_tokens": 60, "total_output_tokens": 12, "reasoning_output_tokens": 11}
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 27.497566333040595,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": true,
+    "input_tokens": 153,
+    "invalid_critique": false,
+    "output_tokens": 1337,
+    "reasoning_tokens": 1331,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_once",
+  "case_id": "logic-boxes-002",
+  "checkpoints": [
+    {
+      "candidate": "MIXED",
+      "candidate_hash": "d3a933a34d90b2703bbbfee80952ddfc33032f915d242ae6586e7f116d272e12",
+      "critique": null,
+      "generation": {
+        "content": "MIXED",
+        "latency_seconds": 27.497566333040595,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "6ce0d32a4087f573cbaf1915cd92a96b3f27e23b8feec5b7b360261f308f6525",
+        "request_hash": "26e5e67d1fa96e445bbcde65e3f88d1d4ad49e05f3633e997e385d3afa2da091",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 153,
+          "reasoning_output_tokens": 1331,
+          "time_to_first_token_seconds": 0.713,
+          "tokens_per_second": 49.94768467179327,
+          "total_output_tokens": 1337
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "MIXED",
+        "expected": "MIXED",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:43:00.140826+00:00",
+  "reasoning": "on",
+  "recursive": false,
+  "started_at": "2026-07-24T15:42:32.643010+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 27.49793420790229
+}

@@ -1,0 +1,195 @@
+{
+  "arms": {
+    "instant_once": {
+      "calls": 12,
+      "corrected_runs": 0,
+      "errors": 0,
+      "false_self_passes": 0,
+      "inference_seconds": 11.445255,
+      "invalid_critiques": 0,
+      "output_tokens": 226,
+      "reasoning_tokens": 0,
+      "regressed_runs": 0,
+      "runs": 12,
+      "self_passes": 0,
+      "terminal_success_rate": 0.5,
+      "terminal_successes": 6,
+      "thrash_runs": 0
+    },
+    "instant_recursive": {
+      "calls": 33,
+      "corrected_runs": 2,
+      "errors": 0,
+      "false_self_passes": 4,
+      "inference_seconds": 75.526214,
+      "invalid_critiques": 0,
+      "output_tokens": 2760,
+      "reasoning_tokens": 0,
+      "regressed_runs": 0,
+      "runs": 12,
+      "self_passes": 11,
+      "terminal_success_rate": 0.6666666666666666,
+      "terminal_successes": 8,
+      "thrash_runs": 1
+    },
+    "thinking_once": {
+      "calls": 12,
+      "corrected_runs": 0,
+      "errors": 0,
+      "false_self_passes": 0,
+      "inference_seconds": 137.402601,
+      "invalid_critiques": 0,
+      "output_tokens": 6625,
+      "reasoning_tokens": 6451,
+      "regressed_runs": 0,
+      "runs": 12,
+      "self_passes": 0,
+      "terminal_success_rate": 1.0,
+      "terminal_successes": 12,
+      "thrash_runs": 0
+    },
+    "thinking_recursive": {
+      "calls": 24,
+      "corrected_runs": 0,
+      "errors": 0,
+      "false_self_passes": 0,
+      "inference_seconds": 245.516408,
+      "invalid_critiques": 3,
+      "output_tokens": 11712,
+      "reasoning_tokens": 11176,
+      "regressed_runs": 0,
+      "runs": 12,
+      "self_passes": 9,
+      "terminal_success_rate": 1.0,
+      "terminal_successes": 12,
+      "thrash_runs": 0
+    }
+  },
+  "held_fixed": {
+    "base_url": "http://127.0.0.1:1234",
+    "benchmark_sha256": "f70f00b45b9734fd3ace3336f6bbdc0a86defcf4173bf426292ef585b9ed1dd1",
+    "capability_probe_validated": true,
+    "case_ids": [
+      "trace-accumulator-001",
+      "trace-aliasing-002",
+      "trace-state-003",
+      "trace-recursion-004",
+      "logic-order-001",
+      "logic-boxes-002",
+      "logic-count-003",
+      "logic-rates-004",
+      "constraint-json-001",
+      "constraint-transform-002",
+      "constraint-filter-003",
+      "constraint-record-004"
+    ],
+    "chat_template_sha256": "f41108adadfd4a8aa67c49731c4e121fecb7f19cd63fc567e65eb4f09d8b1cbd",
+    "cosmo_version": "0.1.0",
+    "evaluator_sha256": "4e3f7c224b84262c4b0bf748a10bf5bce928bf54c037c6815044e1577ce47fff",
+    "hidden_evaluation_is_terminal": true,
+    "lmstudio": {
+      "build_version": "0.4.19+2",
+      "bundle_path": "/Applications",
+      "short_version": "0.4.19+2"
+    },
+    "max_cycles": 4,
+    "max_output_tokens": 2048,
+    "model": "google/gemma-4-26b-a4b-qat",
+    "model_artifact_sha256": "cb567cbcd9f874d2daf1cc3faa8978ece122799892d47a5fd053a2d447e513ad",
+    "model_instance_id": "cosmo-gemma4-26b",
+    "model_record_sha256": "74087122f379f09104d338df24ad5876eb767c720fdc02df84a2ef36c889c00a",
+    "order_seed": 20260724,
+    "prompt_hashes": {
+      "amend": "d53c6385546a263835e552cd7e32de4c85780131dc5e148ce34399a0a142b657",
+      "critic": "05d06d43417b6cf30a409c17904d326739524fe5365ae272d8322493030e824a",
+      "draft": "c7b1ab97356582847d18fd551459b3884ab085bf0ebdf31abf64c3593991663e"
+    },
+    "schema_version": "cosmo.run.v1",
+    "source": {
+      "commit": "219fa939c0e626da86ee631bb898ed29dcf6eecb",
+      "dirty": false
+    },
+    "store": false,
+    "temperature": 0.0
+  },
+  "paired_terminal_outcomes": {
+    "constraint-filter-003": {
+      "instant_once": false,
+      "instant_recursive": false,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "constraint-json-001": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "constraint-record-004": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "constraint-transform-002": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "logic-boxes-002": {
+      "instant_once": false,
+      "instant_recursive": false,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "logic-count-003": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "logic-order-001": {
+      "instant_once": false,
+      "instant_recursive": false,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "logic-rates-004": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "trace-accumulator-001": {
+      "instant_once": false,
+      "instant_recursive": false,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "trace-aliasing-002": {
+      "instant_once": false,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "trace-recursion-004": {
+      "instant_once": true,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    },
+    "trace-state-003": {
+      "instant_once": false,
+      "instant_recursive": true,
+      "thinking_once": true,
+      "thinking_recursive": true
+    }
+  },
+  "source_run_sha256": {
+    "20260724T153723Z": "c4e993a389a48f59df1041aa7463d8a078523fe6be3690842f619b76d974dd7d"
+  },
+  "source_runs": [
+    "20260724T153723Z"
+  ]
+}

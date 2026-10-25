@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 5.456119999988005,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": true,
+    "input_tokens": 109,
+    "invalid_critique": false,
+    "output_tokens": 255,
+    "reasoning_tokens": 249,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_once",
+  "case_id": "logic-rates-004",
+  "checkpoints": [
+    {
+      "candidate": "10",
+      "candidate_hash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+      "critique": null,
+      "generation": {
+        "content": "10",
+        "latency_seconds": 5.456119999988005,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "b4c1e9003b686467e58c9cecadc0d9aaea2f73b0854362de02489dd6e2952a92",
+        "request_hash": "ee1155935706cfc0d685c15523da81210243c9d541cdf2d5a9e932c1efe9749d",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 109,
+          "reasoning_output_tokens": 249,
+          "time_to_first_token_seconds": 0.608,
+          "tokens_per_second": 52.75598062029782,
+          "total_output_tokens": 255
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "10",
+        "expected": "10",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:45:13.527091+00:00",
+  "reasoning": "on",
+  "recursive": false,
+  "started_at": "2026-07-24T15:45:08.070642+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 5.45646795805078
+}

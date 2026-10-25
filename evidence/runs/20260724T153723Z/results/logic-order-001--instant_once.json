@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 0.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 0.5395628749392927,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": false,
+    "input_tokens": 113,
+    "invalid_critique": false,
+    "output_tokens": 4,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": false,
+    "terminal_score": 0.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "instant_once",
+  "case_id": "logic-order-001",
+  "checkpoints": [
+    {
+      "candidate": "LJKM",
+      "candidate_hash": "6320c2b25a3702d2f7dfa8f376aac83c3a059506721e0e41a3869e45f417d913",
+      "critique": null,
+      "generation": {
+        "content": "LJKM",
+        "latency_seconds": 0.5395628749392927,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "462037b5828f88b61de857b32c50438f37344e16e4710a26f1d5110b1a8941e3",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 113,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.473,
+          "tokens_per_second": 76.68638145723297,
+          "total_output_tokens": 4
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "LJKM",
+        "expected": "LMJK",
+        "passed": false,
+        "score": 0.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:39:55.453639+00:00",
+  "reasoning": "off",
+  "recursive": false,
+  "started_at": "2026-07-24T15:39:54.913734+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 0.5399007080122828
+}

@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 16.46777537406888,
+    "inference_seconds_after_best_checkpoint": 7.734797207987867,
+    "initial_passed": true,
+    "input_tokens": 368,
+    "invalid_critique": true,
+    "output_tokens": 823,
+    "reasoning_tokens": 798,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 391,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_recursive",
+  "case_id": "constraint-filter-003",
+  "checkpoints": [
+    {
+      "candidate": "FINAL: 9,81,225",
+      "candidate_hash": "d8fb2b93439ddb5ea77db149409dcaef32326e5efa66b6b1c280a74b4c45580c",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\"}",
+        "summary": "critic defects must be a list",
+        "verdict": "INVALID"
+      },
+      "generation": {
+        "content": "FINAL: 9,81,225",
+        "latency_seconds": 8.732978166081011,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "f55d4e5f44559c2859b527a79c851f6474f14787c2856b9dced1f4d9190e7f9e",
+        "request_hash": "375bbb85c0728cfa2fdb3b0ab5b50a4a4a8aa424c6aa83a56cdc8504a01ff18c",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 110,
+          "reasoning_output_tokens": 417,
+          "time_to_first_token_seconds": 0.416,
+          "tokens_per_second": 52.0386343335391,
+          "total_output_tokens": 432
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "9,81,225",
+        "expected": "9,81,225",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\"}",
+      "latency_seconds": 7.734797207987867,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": "27200faf8ede549663042803446e7282cd52b969e5b862387603a30b83a9a4c5",
+      "request_hash": "8faf0b7ff290b3498d3aabb159480ca11559a708c1476cfb09d5f060002b6851",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 258,
+        "reasoning_output_tokens": 381,
+        "time_to_first_token_seconds": 0.09,
+        "tokens_per_second": 51.25701884513615,
+        "total_output_tokens": 391
+      }
+    }
+  ],
+  "error": null,
+  "family": "constraint_following",
+  "finished_at": "2026-07-24T15:39:20.384590+00:00",
+  "reasoning": "on",
+  "recursive": true,
+  "started_at": "2026-07-24T15:39:03.916262+00:00",
+  "stop_reason": "invalid_critique",
+  "wall_seconds": 16.468400500016287
+}

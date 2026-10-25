@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 10.22559445805382,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": true,
+    "input_tokens": 110,
+    "invalid_critique": false,
+    "output_tokens": 498,
+    "reasoning_tokens": 483,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_once",
+  "case_id": "constraint-filter-003",
+  "checkpoints": [
+    {
+      "candidate": "FINAL: 9,81,225",
+      "candidate_hash": "d8fb2b93439ddb5ea77db149409dcaef32326e5efa66b6b1c280a74b4c45580c",
+      "critique": null,
+      "generation": {
+        "content": "FINAL: 9,81,225",
+        "latency_seconds": 10.22559445805382,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "bfb4cdf1b16a19614e0c38a6cc3801dfea50a4eb29e3c89bcbfa7b8c4b47a7d5",
+        "request_hash": "375bbb85c0728cfa2fdb3b0ab5b50a4a4a8aa424c6aa83a56cdc8504a01ff18c",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 110,
+          "reasoning_output_tokens": 483,
+          "time_to_first_token_seconds": 0.594,
+          "tokens_per_second": 51.798109036243325,
+          "total_output_tokens": 498
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "9,81,225",
+        "expected": "9,81,225",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "constraint_following",
+  "finished_at": "2026-07-24T15:38:27.327877+00:00",
+  "reasoning": "on",
+  "recursive": false,
+  "started_at": "2026-07-24T15:38:17.101929+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 10.225971999927424
+}

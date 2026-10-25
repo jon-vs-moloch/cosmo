@@ -1,0 +1,94 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 1.39514387503732,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": true,
+    "input_tokens": 129,
+    "invalid_critique": false,
+    "output_tokens": 41,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "instant_once",
+  "case_id": "constraint-record-004",
+  "checkpoints": [
+    {
+      "candidate": "{\n  \"id\": \"A-17\",\n  \"active\": true,\n  \"tags\": [\n    \"local\",\n    \"test\"\n  ]\n}",
+      "candidate_hash": "3ccb1cd77394c7070d81c67d4107d16aa372a93bb96a0a43aec2008978293251",
+      "critique": null,
+      "generation": {
+        "content": "{\n  \"id\": \"A-17\",\n  \"active\": true,\n  \"tags\": [\n    \"local\",\n    \"test\"\n  ]\n}",
+        "latency_seconds": 1.39514387503732,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "5018376c7d67f517afa9f3936c7df77213aa12a97138c1900283c6803d55e6ce",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 129,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.633,
+          "tokens_per_second": 54.9274653480774,
+          "total_output_tokens": 41
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": {
+          "active": true,
+          "id": "A-17",
+          "tags": [
+            "local",
+            "test"
+          ]
+        },
+        "actual_keys": [
+          "id",
+          "active",
+          "tags"
+        ],
+        "duplicate_keys": [],
+        "expected": {
+          "active": true,
+          "id": "A-17",
+          "tags": [
+            "local",
+            "test"
+          ]
+        },
+        "expected_keys": [
+          "id",
+          "active",
+          "tags"
+        ],
+        "parse_error": null,
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "constraint_following",
+  "finished_at": "2026-07-24T15:39:45.894223+00:00",
+  "reasoning": "off",
+  "recursive": false,
+  "started_at": "2026-07-24T15:39:44.498735+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 1.395488291978836
+}

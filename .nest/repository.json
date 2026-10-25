@@ -1,0 +1,10 @@
+{
+  "type": "ok.nest.repository-profile.v1",
+  "schemaVersion": 1,
+  "repositorySlug": "cosmo",
+  "profile": {
+    "name": "library",
+    "version": 1
+  },
+  "initializedAt": "2026-10-25T14:19:17.324Z"
+}

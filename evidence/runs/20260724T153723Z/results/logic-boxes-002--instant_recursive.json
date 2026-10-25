@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 0.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 1.7385352910496294,
+    "inference_seconds_after_best_checkpoint": 0.9643530830508098,
+    "initial_passed": false,
+    "input_tokens": 448,
+    "invalid_critique": false,
+    "output_tokens": 35,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": true,
+    "terminal_passed": false,
+    "terminal_score": 0.0,
+    "tokens_after_best_checkpoint": 33,
+    "two_cycle": false
+  },
+  "arm_id": "instant_recursive",
+  "case_id": "logic-boxes-002",
+  "checkpoints": [
+    {
+      "candidate": "RED",
+      "candidate_hash": "65cbe1e19791d49b023800b3e22714e2589b6339bef5e660b628dd1023506ebd",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the content of the box labeled BLUE based on the logic of the puzzle.\"}",
+        "summary": "The candidate correctly identifies the content of the box labeled BLUE based on the logic of the puzzle.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "RED",
+        "latency_seconds": 0.7741822079988196,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "694c244a0fb62ebd2b331b5d195c0a491d054b987ce5bf2f080a1e4d49f9211a",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 155,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.742,
+          "tokens_per_second": 132.58349412396583,
+          "total_output_tokens": 2
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "RED",
+        "expected": "MIXED",
+        "passed": false,
+        "score": 0.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the content of the box labeled BLUE based on the logic of the puzzle.\"}",
+      "latency_seconds": 0.9643530830508098,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": null,
+      "request_hash": "adb3cc3f68ae487868fa2e93f4f712cad8411a8ec44fe440adb0052a192710cb",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 293,
+        "reasoning_output_tokens": 0,
+        "time_to_first_token_seconds": 0.335,
+        "tokens_per_second": 53.984911276190935,
+        "total_output_tokens": 33
+      }
+    }
+  ],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:43:01.880513+00:00",
+  "reasoning": "off",
+  "recursive": true,
+  "started_at": "2026-07-24T15:43:00.141326+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 1.739187333965674
+}

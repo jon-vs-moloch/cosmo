@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 3.207905999966897,
+    "inference_seconds_after_best_checkpoint": 2.6271516249980778,
+    "initial_passed": true,
+    "input_tokens": 356,
+    "invalid_critique": false,
+    "output_tokens": 96,
+    "reasoning_tokens": 0,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 86,
+    "two_cycle": false
+  },
+  "arm_id": "instant_recursive",
+  "case_id": "constraint-transform-002",
+  "checkpoints": [
+    {
+      "candidate": "FINAL: a-b-c-d",
+      "candidate_hash": "a541cfad1e483948a1da900cb4435bfcc7661c9d1a5e62288009c64b7364879b",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly follows all transformation steps: 1. Remove duplicates: {delta, apple, charlie, bravo}. 2. Sort alphabetically: {apple, bravo, charlie, delta}. 3. Take first letters: {a, b, c, d}. 4. Join with hyphens: a-b-c-d.\"}",
+        "summary": "The candidate correctly follows all transformation steps: 1. Remove duplicates: {delta, apple, charlie, bravo}. 2. Sort alphabetically: {apple, bravo, charlie, delta}. 3. Take first letters: {a, b, c, d}. 4. Join with hyphens: a-b-c-d.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "FINAL: a-b-c-d",
+        "latency_seconds": 0.5807543749688193,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": null,
+        "request_hash": "380b2fbade4b0c4479b82a327f3edcd18e2efbe47a936610c9b2d136e2ff639f",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 105,
+          "reasoning_output_tokens": 0,
+          "time_to_first_token_seconds": 0.4,
+          "tokens_per_second": 60.85388676908768,
+          "total_output_tokens": 10
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "a-b-c-d",
+        "expected": "a-b-c-d",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly follows all transformation steps: 1. Remove duplicates: {delta, apple, charlie, bravo}. 2. Sort alphabetically: {apple, bravo, charlie, delta}. 3. Take first letters: {a, b, c, d}. 4. Join with hyphens: a-b-c-d.\"}",
+      "latency_seconds": 2.6271516249980778,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": null,
+      "request_hash": "2a82d5530c6789f9c6b07809b4cafb02c2a9447ee1fefcb136c37bf9d4fa60fe",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 251,
+        "reasoning_output_tokens": 0,
+        "time_to_first_token_seconds": 0.986,
+        "tokens_per_second": 52.95323038247971,
+        "total_output_tokens": 86
+      }
+    }
+  ],
+  "error": null,
+  "family": "constraint_following",
+  "finished_at": "2026-07-24T15:40:54.570812+00:00",
+  "reasoning": "off",
+  "recursive": true,
+  "started_at": "2026-07-24T15:40:51.362226+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 3.208595917094499
+}

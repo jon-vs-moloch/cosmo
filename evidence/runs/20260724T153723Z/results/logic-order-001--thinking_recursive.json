@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 21.731497499975376,
+    "inference_seconds_after_best_checkpoint": 11.415699708042666,
+    "initial_passed": true,
+    "input_tokens": 361,
+    "invalid_critique": false,
+    "output_tokens": 1038,
+    "reasoning_tokens": 1000,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 527,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_recursive",
+  "case_id": "logic-order-001",
+  "checkpoints": [
+    {
+      "candidate": "LMJK",
+      "candidate_hash": "ce2c02c0c807c8773903ab3024a8f2638b6252e90b68ee5552b87110b53b560f",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the unique order LMJK and follows the output contract.\"}",
+        "summary": "The candidate correctly identifies the unique order LMJK and follows the output contract.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "LMJK",
+        "latency_seconds": 10.31579779193271,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "fe28fcef59bcd97d3a711347ed60d49157b78536a0306dc8879a34b0fad0f954",
+        "request_hash": "ef08268a46de4992c61ad18e21e41592dbe09c670b31b3a2febd24bd47273e85",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 111,
+          "reasoning_output_tokens": 505,
+          "time_to_first_token_seconds": 0.418,
+          "tokens_per_second": 51.71471580225699,
+          "total_output_tokens": 511
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "LMJK",
+        "expected": "LMJK",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly identifies the unique order LMJK and follows the output contract.\"}",
+      "latency_seconds": 11.415699708042666,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": "c8cff1f0e8dafb652e167e7d0343fee77b5db05fcd4a565c5299224c71789931",
+      "request_hash": "e55e3bafc8d76ac00bc84df5595f8d43272666908a2869b7504ad8fb4cdf96ee",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 250,
+        "reasoning_output_tokens": 495,
+        "time_to_first_token_seconds": 0.983,
+        "tokens_per_second": 50.59406929743427,
+        "total_output_tokens": 527
+      }
+    }
+  ],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:43:41.776462+00:00",
+  "reasoning": "on",
+  "recursive": true,
+  "started_at": "2026-07-24T15:43:20.044334+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 21.732224124949425
+}

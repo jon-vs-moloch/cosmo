@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 21.283617999986745,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": true,
+    "input_tokens": 111,
+    "invalid_critique": false,
+    "output_tokens": 1026,
+    "reasoning_tokens": 1020,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_once",
+  "case_id": "logic-order-001",
+  "checkpoints": [
+    {
+      "candidate": "LMJK",
+      "candidate_hash": "ce2c02c0c807c8773903ab3024a8f2638b6252e90b68ee5552b87110b53b560f",
+      "critique": null,
+      "generation": {
+        "content": "LMJK",
+        "latency_seconds": 21.283617999986745,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "68d1aeabb417a3d67afca386b7eca7a87088f8a52b2d104701c780062d4521da",
+        "request_hash": "ef08268a46de4992c61ad18e21e41592dbe09c670b31b3a2febd24bd47273e85",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 111,
+          "reasoning_output_tokens": 1020,
+          "time_to_first_token_seconds": 0.602,
+          "tokens_per_second": 49.646009976852,
+          "total_output_tokens": 1026
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "LMJK",
+        "expected": "LMJK",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "exact_reasoning",
+  "finished_at": "2026-07-24T15:40:50.634756+00:00",
+  "reasoning": "on",
+  "recursive": false,
+  "started_at": "2026-07-24T15:40:29.350660+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 21.284188832971267
+}

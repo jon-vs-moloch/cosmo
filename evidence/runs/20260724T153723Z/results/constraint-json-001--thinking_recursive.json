@@ -1,0 +1,118 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 15.838851167005487,
+    "inference_seconds_after_best_checkpoint": 8.935193042038009,
+    "initial_passed": true,
+    "input_tokens": 430,
+    "invalid_critique": false,
+    "output_tokens": 762,
+    "reasoning_tokens": 691,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 428,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_recursive",
+  "case_id": "constraint-json-001",
+  "checkpoints": [
+    {
+      "candidate": "{\n  \"name\": \"cosmo\",\n  \"even\": [2, 4, 6],\n  \"letters\": 5\n}",
+      "candidate_hash": "203c847a4e76057639ba358b35f7470f4a521cbe5eeeed5ccdbce62d3fc1b45a",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly follows all instructions, including key order, values, and formatting constraints.\"}",
+        "summary": "The candidate correctly follows all instructions, including key order, values, and formatting constraints.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "{\n  \"name\": \"cosmo\",\n  \"even\": [2, 4, 6],\n  \"letters\": 5\n}",
+        "latency_seconds": 6.903658124967478,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "e4c940c325ee9b19278b4332c89386e0979e17665fcf264cdc59d745b80a90e4",
+        "request_hash": "0fe768d01366a8bccebdf35ec98f2130871a6867e8d9755e913e347d44b51fe4",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 130,
+          "reasoning_output_tokens": 297,
+          "time_to_first_token_seconds": 0.505,
+          "tokens_per_second": 52.32596861644284,
+          "total_output_tokens": 334
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": {
+          "even": [
+            2,
+            4,
+            6
+          ],
+          "letters": 5,
+          "name": "cosmo"
+        },
+        "actual_keys": [
+          "name",
+          "even",
+          "letters"
+        ],
+        "duplicate_keys": [],
+        "expected": {
+          "even": [
+            2,
+            4,
+            6
+          ],
+          "letters": 5,
+          "name": "cosmo"
+        },
+        "expected_keys": [
+          "name",
+          "even",
+          "letters"
+        ],
+        "parse_error": null,
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly follows all instructions, including key order, values, and formatting constraints.\"}",
+      "latency_seconds": 8.935193042038009,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": "242fa9042f1eeff27adc41638f320b5ab5c14f6bc565ac6ae2a7c3021dd051bd",
+      "request_hash": "da1cea7727fe8ffaaf5d556d1f006327c748a1d54cf7c6184b51fb5b36eaf8f3",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 300,
+        "reasoning_output_tokens": 394,
+        "time_to_first_token_seconds": 0.384,
+        "tokens_per_second": 50.138832388529444,
+        "total_output_tokens": 428
+      }
+    }
+  ],
+  "error": null,
+  "family": "constraint_following",
+  "finished_at": "2026-07-24T15:45:08.070170+00:00",
+  "reasoning": "on",
+  "recursive": true,
+  "started_at": "2026-07-24T15:44:52.230770+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 15.839468957972713
+}

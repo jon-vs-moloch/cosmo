@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 2,
+    "calls_after_best_checkpoint": 1,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 11.950771583011374,
+    "inference_seconds_after_best_checkpoint": 5.48035249998793,
+    "initial_passed": true,
+    "input_tokens": 366,
+    "invalid_critique": false,
+    "output_tokens": 539,
+    "reasoning_tokens": 504,
+    "regressed_by_loop": false,
+    "self_assessed_pass": true,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 232,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_recursive",
+  "case_id": "trace-accumulator-001",
+  "checkpoints": [
+    {
+      "candidate": "5",
+      "candidate_hash": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+      "critique": {
+        "defects": [],
+        "raw": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly calculated the final value of x as 5.\"}",
+        "summary": "The candidate correctly calculated the final value of x as 5.",
+        "verdict": "PASS"
+      },
+      "generation": {
+        "content": "5",
+        "latency_seconds": 6.470419083023444,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "91bc29cc38770185173fe4fdc9abdf08c103cad113b685ad2ce0da7f6009f068",
+        "request_hash": "32a8a616a3675c7276f5fd7098f968164fc0886f055dae5a7008d29e6b6fe8ac",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 114,
+          "reasoning_output_tokens": 302,
+          "time_to_first_token_seconds": 0.613,
+          "tokens_per_second": 52.53736244243787,
+          "total_output_tokens": 307
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "5",
+        "expected": "5",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [
+    {
+      "content": "{\"verdict\":\"PASS\",\"defects\":[],\"summary\":\"The candidate correctly calculated the final value of x as 5.\"}",
+      "latency_seconds": 5.48035249998793,
+      "model_instance_id": "cosmo-gemma4-26b",
+      "reasoning_hash": "d99b2005c3491f8b842737310510ec68163b7a42eaa6bdfbd638fed5f8234afe",
+      "request_hash": "801366438972d51df2fc7a6ab84d1743385e1e5723baafb8a383d78961a9d093",
+      "role": "critic",
+      "sequence": 1,
+      "stats": {
+        "input_tokens": 252,
+        "reasoning_output_tokens": 202,
+        "time_to_first_token_seconds": 0.989,
+        "tokens_per_second": 51.82007737041771,
+        "total_output_tokens": 232
+      }
+    }
+  ],
+  "error": null,
+  "family": "program_trace",
+  "finished_at": "2026-07-24T15:40:07.405500+00:00",
+  "reasoning": "on",
+  "recursive": true,
+  "started_at": "2026-07-24T15:39:55.454151+00:00",
+  "stop_reason": "model_pass",
+  "wall_seconds": 11.951400416903198
+}

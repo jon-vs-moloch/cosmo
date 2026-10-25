@@ -1,0 +1,68 @@
+{
+  "analysis": {
+    "amendment_regressions": 0,
+    "best_checkpoint": 0,
+    "best_score": 1.0,
+    "calls": 1,
+    "calls_after_best_checkpoint": 0,
+    "corrected_by_loop": false,
+    "duplicate_candidate": false,
+    "final_minus_best": 0.0,
+    "inference_seconds": 16.46570599998813,
+    "inference_seconds_after_best_checkpoint": 0,
+    "initial_passed": true,
+    "input_tokens": 128,
+    "invalid_critique": false,
+    "output_tokens": 790,
+    "reasoning_tokens": 765,
+    "regressed_by_loop": false,
+    "self_assessed_pass": false,
+    "self_assessed_stalled": false,
+    "self_pass_false_positive": false,
+    "terminal_passed": true,
+    "terminal_score": 1.0,
+    "tokens_after_best_checkpoint": 0,
+    "two_cycle": false
+  },
+  "arm_id": "thinking_once",
+  "case_id": "trace-aliasing-002",
+  "checkpoints": [
+    {
+      "candidate": "[1, 2, 3, 4] [9, 2, 3]",
+      "candidate_hash": "cce0a447e15d5d28ad5b3bef250609c40453409a3a7c3d979299b0f962162fac",
+      "critique": null,
+      "generation": {
+        "content": "[1, 2, 3, 4] [9, 2, 3]",
+        "latency_seconds": 16.46570599998813,
+        "model_instance_id": "cosmo-gemma4-26b",
+        "reasoning_hash": "2c1939eebab0c4f5c706caf068c4c552bb65705a76c4aeca751d57efac7cba26",
+        "request_hash": "2495b84a0ad2a25e292543fc19a7e845175f2c800eb01388909e5fafa7d54147",
+        "role": "draft",
+        "sequence": 0,
+        "stats": {
+          "input_tokens": 128,
+          "reasoning_output_tokens": 765,
+          "time_to_first_token_seconds": 0.627,
+          "tokens_per_second": 49.93009457789294,
+          "total_output_tokens": 790
+        }
+      },
+      "index": 0,
+      "score": {
+        "actual": "[1, 2, 3, 4] [9, 2, 3]",
+        "expected": "[1, 2, 3, 4] [9, 2, 3]",
+        "passed": true,
+        "score": 1.0
+      }
+    }
+  ],
+  "critic_calls": [],
+  "error": null,
+  "family": "program_trace",
+  "finished_at": "2026-07-24T15:41:50.334244+00:00",
+  "reasoning": "on",
+  "recursive": false,
+  "started_at": "2026-07-24T15:41:33.868060+00:00",
+  "stop_reason": "one_shot",
+  "wall_seconds": 16.466255624894984
+}

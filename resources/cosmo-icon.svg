@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="field" x1="120" y1="80" x2="890" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111D44"/><stop offset=".52" stop-color="#263C91"/><stop offset="1" stop-color="#0A1028"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="250" y1="220" x2="775" y2="795" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6F7FF"/><stop offset=".43" stop-color="#74E0FF"/><stop offset="1" stop-color="#9A7CFF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="212" fill="url(#field)"/>
+  <circle cx="512" cy="512" r="327" fill="none" stroke="#4A68D8" stroke-width="4" opacity=".42"/>
+  <path d="M745 274C678 220 599 193 510 193C303 193 171 337 171 512S303 831 510 831C601 831 681 803 748 748" fill="none" stroke="#73DEFF" stroke-width="66" stroke-linecap="round" opacity=".28" filter="url(#glow)"/>
+  <path d="M745 274C678 220 599 193 510 193C303 193 171 337 171 512S303 831 510 831C601 831 681 803 748 748" fill="none" stroke="url(#orbit)" stroke-width="52" stroke-linecap="round"/>
+  <path d="M455 442L644 512L455 582L517 512Z" fill="#F4FBFF"/>
+  <circle cx="770" cy="257" r="20" fill="#F4FBFF"/>
+  <circle cx="204" cy="414" r="10" fill="#B6F0FF" opacity=".9"/>
+</svg>
